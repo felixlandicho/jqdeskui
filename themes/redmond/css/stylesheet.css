@@ -36,6 +36,7 @@ body {
 			width: 235px;
 		}
 			#user ul#icons li {padding: 4px 5px 3px 2px;}
+		
 	#head #navbar {
 		height: 28px;
 	}
@@ -43,7 +44,7 @@ body {
 			float: left;
 			height: 28px;
 			list-style: none;
-			margin: 0 0 0 -2px;
+			margin: 0;
 			padding: 0;
 		}
 			#menu .ui-icon {
@@ -61,6 +62,7 @@ body {
 				#menu li.ui-state-default .ui-icon {margin-top: -9px}
 			#menu li a {
 				color: #1d5987;
+				cursor: pointer;
 				display: block;
 				font-size: 11px;
 				font-weight: bold;
@@ -78,7 +80,7 @@ body {
 					border: 1px solid #C5DBEC;
 					border-top: 0;
 					display: none;
-					left: -2px;
+					left: -1px;
 					list-style: none;
 					padding: 0 0 2px 0;
 					position: absolute;
@@ -194,7 +196,7 @@ body {
 			top: 50%;
 		}
 		#sidetabs .ui-tabs-panel {
-			height: 200px;
+			max-height: 200px;
 			overflow: auto;
 		}
 		#sidecolumn #datepicker {
@@ -243,13 +245,10 @@ body {
     border-style: solid;
     border-width: 1px 0;
 }
-#navbar #menu {
-	border-left: 1px solid #C5DBEC;
-	border-right: 1px solid #DFEFFC;
-}
+#navbar #menu {}
 #menu li {
 	border-bottom: 0;
-	border-left: 1px solid #DFEFFC;
+	border-left: 0;
 	border-right: 1px solid #C5DBEC;
 	border-top: 0;
 }

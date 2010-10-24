@@ -9,24 +9,24 @@ $(document).ready(function() {
 	$('#accordion').deskbuild({
 		winid: "xhr-accordion-2",
 		title: "XHR Accordion 2",
-		links: "sources/xhr-accordion-1.html"
+		links: "sources/xhr-accordion-2.html"
 	});
 	$('#accordion').deskbuild({
 		winid: "xhr-accordion-3",
 		title: "XHR Accordion 3",
-		links: "sources/xhr-accordion-1.html"
+		links: "sources/xhr-accordion-3.html"
 	});
 	
 	$('#sidetabs').deskbuild({
 		winid: "xhr-tabs-1",
 		title: "XHR Tabs 1",
-		links: "sources/xhr-accordion-1.html",
+		links: "sources/sidebar-tabs-1.html",
 		type: "tabs"
 	});
 	$('#sidetabs').deskbuild({
 		winid: "xhr-tabs-2",
 		title: "XHR Tabs 2",
-		links: "sources/xhr-accordion-1.html",
+		links: "sources/sidebar-tabs-2.html",
 		type: "tabs"
 	});
 	
@@ -56,8 +56,7 @@ $(document).ready(function() {
 				error: function(xhr, status, index, anchor) {
 					$(anchor.hash).html("Couldn't load this tab. We'll try to fix this as soon as possible. If this wouldn't be a demo.");
 				}
-			},
-			fx: { height: 200 }
+			}
 		});
 	}
 	else {
@@ -100,14 +99,71 @@ $(document).ready(function() {
 	$('#homeTrigger').click(function(){
 		homeInitCall();
 	});
+	$('#jquerycoreTrigger').click(function(){
+		jquerycoreInitCall();
+	});
+	$('#jqueryuiTrigger').click(function(){
+		jqueryuiInitCall();
+	});
+	$('#windowfsTrigger').click(function(){
+		windowfsInitCall();
+	});
+	$('#superfishTrigger').click(function(){
+		superfishInitCall();
+	});
+	
 });
 
-function homeInitCall(){
+function homeInitCall() {
 	$.window({
 		wndid:'homeWindow',
 		title:'Home Window',
 		url: 'sources/ui-sample.html',
 		width:800,
+		height:480,
+		maximizable:true,
+		resizable:true
+	});
+}
+function jquerycoreInitCall() {
+	$.window({
+		wndid:'jquerycore',
+		title:'jQuery Website',
+		url: 'http://jquery.com',
+		width: 925,
+		height:480,
+		maximizable:true,
+		resizable:true
+	});
+}
+function jqueryuiInitCall() {
+	$.window({
+		wndid:'jqueryui',
+		title:'jQuery UI Website',
+		url: 'http://jqueryui.com',
+		width: 975,
+		height:480,
+		maximizable:true,
+		resizable:true
+	});
+}
+function windowfsInitCall() {
+	$.window({
+		wndid:'windowfs',
+		title:'jQuery Window Plugin',
+		url: 'http://fstoke.me/blog/?p=696&cpage=3',
+		width: 1015,
+		height:480,
+		maximizable:true,
+		resizable:true
+	});
+}
+function superfishInitCall() {
+	$.window({
+		wndid:'superfish',
+		title:'jQuery Menu Plugin',
+		url: 'http://users.tpg.com.au/j_birch/plugins/superfish/',
+		width: 900,
 		height:480,
 		maximizable:true,
 		resizable:true

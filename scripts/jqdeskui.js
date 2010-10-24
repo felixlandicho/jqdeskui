@@ -17,7 +17,7 @@
 				var acallers = $(this);
 				acallers.append("<div id='"+options.winid+"'></div>");
 				var contain = acallers.children("div#"+options.winid);
-				contain.append("<h3><a href='#'>"+options.title+"</a></h3>");
+				contain.append("<h3><a>"+options.title+"</a></h3>");
 				contain.append("<div class='deskbuild-content'></div>");
 				$('#'+options.winid+' .deskbuild-content').load(options.links);
 			}
@@ -264,8 +264,8 @@ $.Window = (function()  {
 			height: 300,                  // [number:300] window height
 			minWidth: 200,                // [number:200] the minimum width, if -1 means no checking
 			minHeight: 150,               // [number:150] the minimum height, if -1 means no checking
-			maxWidth: 800,                // [number:800] the maximum width, if -1 means no checking
-			maxHeight: 600,               // [number:600] the maximum height, if -1 means no checking
+			maxWidth: -1,                // [number:800] the maximum width, if -1 means no checking
+			maxHeight: -1,               // [number:600] the maximum height, if -1 means no checking
 			showFooter: true,             // [boolean:true] to control show footer panel
 			showRoundCorner: true,       // [boolean:true] to control display window as round corner
 			closable: true,               // [boolean:true] to control window closable
