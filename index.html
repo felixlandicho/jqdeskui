@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQDeskUI - Demo</title>
+		<link type="text/css" rel="stylesheet" href="themes/redmond/css/stylesheet.css">
+		<link type="text/css" rel="stylesheet" href="themes/redmond/css/jquery-ui-1.8.5.custom.css">
+		<link type="text/css" rel="stylesheet" href="themes/redmond/css/jquery-window.4.07b.css">
+		
+		<script type="text/javascript" src="scripts/jquery-1.4.3.min.js"></script>
+		<script type="text/javascript" src="scripts/jqueryui-1.8.5.min.js"></script>
+		<script type="text/javascript" src="scripts/superfish.js"></script>
+		<script type="text/javascript" src="scripts/jqdeskui.js"></script>
+		<script type="text/javascript" src="scripts/jqdeskui-init.js"></script>
+		
+		<script type="text/javascript" src="http://jqueryui.com/themeroller/themeswitchertool/"></script>
+		
+	</head>
+	<body>
+		<div id="desk">
+			<div id="maincolumn">
+            	<div id="dashboard">
+                	<div id="deskicons">
+                        <a class="ui-state-default ui-corner-all" onclick="homeInitCall();"><img src="images/house.png" alt="Home"></a>
+						<a class="ui-state-default ui-corner-all" id="2"><img src="images/charts.png" alt="Charts"></a>
+                        <a class="ui-state-default ui-corner-all" id="3"><img src="images/edit.png" alt="Edit"></a>
+                        <a class="ui-state-default ui-corner-all" id="4"><img src="images/users.png" alt="Users"></a>
+                        <a class="ui-state-default ui-corner-all" id="5"><img src="images/comments.png" alt="Comments"></a>
+                        <a class="ui-state-default ui-corner-all" id="6"><img src="images/calendar.png" alt="Calendar"></a>
+                        <a class="ui-state-default ui-corner-all" id="7"><img src="images/address.png" alt="Address"></a>
+                    </div>
+                </div>
+                <div id="widgetbox">
+					<div id="accordion"></div>
+                </div>
+			</div>
+			<div id="sidecolumn" class="ui-widget ui-widget-content">
+				<a class="ui-state-default ui-corner-all" id="show-hide" href="#">
+					<span class="ui-icon ui-icon-arrowthickstop-1-e"></span>
+					Hide SideBar
+				</a>
+				<div id="datepicker"></div>
+				<div id="sidetabs">
+            		<ul></ul>
+                </div>
+			</div>
+		</div>
+		
+		<div id="head">
+			<div id="topbar" class="ui-state-default">
+				<div id="logo"></div>
+				<div id="user">
+					<ul id="icons" class="ui-widget ui-helper-clearfix">
+						<li class="ui-state-default ui-corner-all" title="Settings"><span class="ui-icon ui-icon-wrench"></span>Settings</li>
+						<li class="ui-state-default ui-corner-all" title="Profiles"><span class="ui-icon ui-icon-person"></span>Profiles</li>
+						<li class="ui-state-default ui-corner-all" title="Sign Out"><span class="ui-icon ui-icon-power"></span>Sign Out</li>
+					</ul>
+				</div>
+			</div>
+			<div id="navbar" class="ui-state-hover">
+				<!-- Navigation Menu - starts -->
+				<ul id="menu">
+					<li>
+						<a href="#" class="sf-with-ul">Dashboard</a>
+						<ul>
+							<li><a id="homeTrigger">Home Window</a></li>
+							<li><a id="chartTrigger">Chart Sample</a></li>
+							<li><a id="editTrigger">Edit Content</a></li>
+							<li><a id="usersTrigger">Manage User</a></li>
+							<li><a id="commentTrigger">Comments</a></li>
+							<li><a id="calendarTrigger">Calendars</a></li>
+							<li><a id="contactsTrigger">My Contact</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="sf-with-ul">Thanks to</a>
+						<ul>
+							<li><a id="jquerycoreTrigger">jQuery Core</a></li>
+							<li><a id="jqueryuiTrigger">jQuery UI</a></li>
+							<li><a id="windowfsTrigger">jQuery Window (firestoke)</a></li>
+							<li><a id="superfishTrigger">SuperFish Menu</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- Navigation Menu - finish -->
+			</div>
+		</div>
+		
+		<div id="dock">
+			<div id="botbar" class="ui-state-hover">
+				<ul class="ui-widget ui-helper-clearfix" id="icons">
+					<li class="ui-state-default ui-corner-all">
+						<span class="ui-icon ui-icon-home"></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
